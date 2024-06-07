@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Howework - Forms</title>
+  <title>Homework - Forms</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <main>
+    <form id="registration-form" action="#">
+      <div class="form-group">
+        <label for="name">Повне ім'я</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pass">Пароль</label>
+        <input type="password" name="pass" id="pass-1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pass-repeat">Пароль ще раз</label>
+        <input type="password" name="pass-repeat" id="pass-2" required>
+      </div>
+
+      <div class="form-group">
+        Стать
+        <input type="radio" name="gender" id="gender-male" value="Чоловіча" required>
+        <label for="gender-male">Чоловіча</label>
+        <input type="radio" name="gender" id="gender-female" value="Жіноча">
+        <label for="gender-female">Жіноча</label>
+        <input type="radio" name="gender" id="gender-non-binary" value="Небінарна">
+        <label for="gender-non-binary">Небінарна</label>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Вік</label>
+        <input type="number" name="age" id="age" min="0" max="120" required>
+      </div>
+
+      <div class="form-group">
+        <label for="program">Курс</label>
+        <select name="program" id="program" required>
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="Project Management">Project Management</option>
+          <option value="QA Manual">QA Manual</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Адреса</label>
+        <textarea name="address" id="address" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" name="terms-agreement" id="terms-agreement" required>
+        <label for="terms-agreement">Я погоджуюсь з обробкою персональних даних</label>
+      </div>
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Зареєструватися</button>
+    </form>
+  </main>
 </body>
 </html>
