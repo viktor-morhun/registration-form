@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homework - Forms</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <main>
@@ -30,18 +31,20 @@
       </div>
 
       <div class="form-group">
-        Стать
-        <input type="radio" name="gender" id="gender-male" value="Чоловіча" required>
-        <label for="gender-male">Чоловіча</label>
-        <input type="radio" name="gender" id="gender-female" value="Жіноча">
-        <label for="gender-female">Жіноча</label>
-        <input type="radio" name="gender" id="gender-non-binary" value="Небінарна">
-        <label for="gender-non-binary">Небінарна</label>
+        <span>Стать</span>
+        <div class="radio-group">
+          <input type="radio" name="gender" id="gender-male" value="Чоловіча" required>
+          <label for="gender-male">Чоловіча</label>
+          <input type="radio" name="gender" id="gender-female" value="Жіноча">
+          <label for="gender-female">Жіноча</label>
+          <input type="radio" name="gender" id="gender-non-binary" value="Небінарна-особа">
+          <label for="gender-non-binary">Небінарна особа</label>
+        </div>
       </div>
 
       <div class="form-group">
         <label for="age">Вік</label>
-        <input type="number" name="age" id="age" min="0" max="120" required>
+        <input type="number" name="age" id="age" min="15" max="120" required>
       </div>
 
       <div class="form-group">
@@ -59,12 +62,15 @@
         <textarea name="address" id="address" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
       </div>
 
-      <div class="form-group">
+      <div class="form-group form-group-checkbox">
         <input type="checkbox" name="terms-agreement" id="terms-agreement" required>
         <label for="terms-agreement">Я погоджуюсь з обробкою персональних даних</label>
       </div>
-      <button type="reset">Очистити форму</button>
-      <button type="submit">Зареєструватися</button>
+
+      <div class="button-group">
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+      </div>
     </form>
   </main>
 </body>
