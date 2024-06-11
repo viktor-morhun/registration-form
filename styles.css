@@ -103,9 +103,3 @@ input:invalid {
 input:valid {
   border-color: #4caf50;
 }
-
-button-group {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
