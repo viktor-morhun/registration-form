@@ -86,6 +86,16 @@ button:hover {
   transition: 0.3s;
 }
 
+.secondary-button {
+  color: #0071e3;
+  background-color: white;
+  box-shadow: inset 0 0 0 2px #0071e3;
+}
+
+.secondary-button:hover {
+  background-color: #f0f0f0;
+}
+
 input:invalid {
   border-color: #ff6b6b;
 }
